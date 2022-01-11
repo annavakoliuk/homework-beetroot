@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Семантика</title>
+</head>
+<body>
+    <main>
+        <article>
+            <header>
+                <h1>HTML5 Семантичні елементи</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#semantic-definition">Що таке семантичні елементи?</a></li>
+                        <li><a href ="#browser-support">Підтримка браузерів</a></li>
+                        <li><a href="#new-elements">Нові семантичні елементи в HTML5</a></li>
+                        <li><a href="#section-element">HTML5 &lt;section&gt; елемент</a></li>
+                        <li><a href="#article-element">HTML5 &lt;article&gt; елемент</a></li>
+                        <li><a href="#header-element">HTML5 &lt;header&gt; елемент</a></li>
+                        <li><a href="#footer-element">HTML5 &lt;footer&gt; елемент</a></li>
+                        <li><a href="#iframe-element">HTML5 &lt;iframe&gt; елемент</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section id="semantic-definition">
+                <h2>Що таке семантичні елементи?</h2>
+                <p>Семантичний елемент чітко описує його значення як для браузера, так і для розробника.</p>
+                <p>Приклади <strong>не семантичних</strong> елементів: &lt;div&gt; і &lt;span&gt; - нічого не говорить про його вміст.</p>
+                <p>Приклади <strong>семантичних</strong> елементів: &lt;form&gt;, &lt;table&gt; і &lt;article&gt;- чітко визначає його зміст.</p>
+            </section>
+            <section id="browser-support">
+                <h2>Підтримка браузерів</h2>
+                <div>
+                    <span><img src="images/google-chrome.png" alt="chrome-logo" width="30" height="30"></span>
+                    <span><img src="images/Edge.png" alt="edge-logo" width="30" height="30"></span>
+                    <span><img src="images/firefox.png" alt="firefox-logo" width="30" height="30"></span>
+                    <span><img src="images/safari.png" alt="safari-logo" width="30" height="30"></span>
+                    <span><img src="images/Opera.png" alt="opera-logo" width="30" height="30"></span>
+                </div>
+                <p>Семантичні елементи HTML5 підтримуються у всіх сучасних браузерах.</p>
+                <p>Крім того, ви можете "навчити" старих браузерів, як обробляти "невідомі елементи".</p>
+                <p>Прочитайте про це в <a href="https://www.blogger.com/blog/page/edit/2590532390801722394/850003172824707311#" target="_blank">підтримці браузера HTML5.</a></p>
+            </section>
+            <section id="new-elements">
+                <h2>Нові семантичні елементи в HTML5</h2>
+                <p>HTML5 пропонує нові семантичні елементи для визначення різних частин веб-сторінки:</p>
+                <ul>
+                    <li>&lt;section&gt;</li>
+                    <li>&lt;article&gt;</li>
+                    <li>&lt;header&gt;</li>
+                    <li>&lt;footer&gt;</li>
+                </ul>
+            </section>
+            <section id="section-element">
+                <h2>HTML5 &lt;section&gt; елемент</h2>
+                <p>Елемент &lt;section&gt; визначає розділ в документі.</p>
+                <p>Згідно з документацією в3к'с HTML5: "розділ представляє собою тематичну угруповання контенту, зазвичай з заголовком".</p>
+                <p>Домашня сторінка зазвичай може бути розділена на розділи для ознайомлення, змісту і контактної інформації.</p>
+                <div>
+                    <img src="images/example1.png" alt="section example" width="700" height="162">
+                </div>
+            </section>
+            <section id="article-element">
+                <h2>HTML5 &lt;article&gt; елемент</h2>
+                <p>Елемент &lt;article&gt; визначає незалежний, автономний вміст.</p>
+                <p>Стаття повинна мати сенс самостійно, і вона повинна мати можливість читати його незалежно від іншої частини веб-сайту.</p>
+                <p>Приклади того, де можна використовувати елемент &lt;article&gt;:</p>
+                <ul>
+                    <li>Повідомлення на форумі</li>
+                    <li>блозі</li>
+                    <li>Газетна стаття</li>
+                </ul>
+                <div>
+                    <img src="images/example2.png" alt="article example" width="700" height="165">
+                </div>
+            </section>
+            <section id="header-element">
+                <h2>HTML5 &lt;header&gt; елемент</h2>
+                <p>Елемент &lt;header&gt; повинен використовуватися в якості контейнера для вступного змісту.</p>
+                <p>В одному документі може бути кілька елементів &lt;header&gt;.</p>
+                <p>У наступному прикладі визначається заголовок для статті</p>
+                <div>
+                    <img src="images/exampale3.png" alt="header example" width="700" height="227">
+                </div>
+            </section>
+            <section id="footer-element">
+                <h2>HTML5 &lt;footer&gt; елемент</h2>
+                <p>Елемент &lt;footer&gt; вказує нижній колонтитул для документа або розділу</p>
+                <p>Нижній колонтитул зазвичай містить автора документа, інформацію про авторське право, посилання на умови використання, контактні дані і т.д</p>
+                <p>В одному документі може бути кілька елементів &lt;footer&gt;.</p>
+                <div>
+                    <a href="https://www.blogger.com/onboarding" target="_blank"><img src="images/example4.png" alt="footer example" width="700" height="167"></a>
+                </div>
+            </section>
+            <section id="iframe-element">
+                <h2>HTML5 &lt;iframe&gt; елемент</h2>
+                <div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/FII4DRuiLLI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+        </article>
+    </main>
+</body>
+</html>
