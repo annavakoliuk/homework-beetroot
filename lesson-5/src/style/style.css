@@ -32,7 +32,7 @@ p {
 
 img {
     display: block;
-    max-width: 100%;
+    width: 100%;
 }
 
 .container {
@@ -70,12 +70,12 @@ img {
     font-size: 18px;
     line-height: 25px;
     color: #828282;
-    text-shadow: 1px 4px 4px 1px #828282;
+    text-shadow: 1px 4px 4px #82828293;
 }
 
 
 
-.nav-link.active {
+.nav-link:hover {
     color: #070707;
 }
 
@@ -83,13 +83,94 @@ img {
     padding: 34px 0 100px;
 }
 
+.image-holder {
+    width: 100%;
+}
+
 .about-me-section {
-    padding: 145px 0 145px;
+    padding: 100px 0 75px;
     background-color: #F6F6F6;
     text-align: center;
 }
 
-.about-me-section .container {
+.text-holder {
+    margin: 0 auto;
     max-width: 480px;
 }
+
+.skill-section {
+    padding: 100px 0 83px;
+    text-align: center;
+}
+
+.skill-card-list {
+    margin-top: 55px;
+    list-style: none;
+    display: inline-block;
+    columns: 4;
+}
+
+.skill-card {
+    display: inline-block;
+    max-width: 166px;
+}
+
+.skill-card p {
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.logo-container {
+    max-width: 90px;
+    margin: 0 auto 60px;
+}
+
+.logo-container .image-holder {
+    margin-bottom: 24px;
+}
+
+.star-list {
+    list-style: none;
+    display: inline-block;
+    columns: 5;
+}
+
+#figma p {
+    margin-bottom: 77px;
+}
+
+#figma .logo-container {
+    max-width: 60px;
+}
+
+.portfolio-section {
+    background-color: #F6F6F6;
+    padding: 120px 0 35px;
+    text-align: center;
+}
+
+.portfolio-section h2 {
+    margin-bottom: 5px;
+}
+
+.portfolio-item {
+    padding: 65px 0;
+}
+
+.image-caption {
+    margin-top: 10px;
+}
+
+.portfolio-link {
+    color: #070707;
+    font-size: 18px;
+    line-height: 25px;
+    text-decoration: underline;
+}
+
+
+
+
+
+
 
