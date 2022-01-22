@@ -62,8 +62,9 @@ body {
     display: flex;
     cursor: pointer;
     font-size: 18px;
+    border-top: 3px solid transparent; 
+    border-bottom: 3px solid transparent; 
 }
-
 
 .small-text {
     margin: auto 3px;
