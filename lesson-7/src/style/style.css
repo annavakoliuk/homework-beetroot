@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    padding: 20px 0 30px;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1125px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+button {
+    font-size: 16px;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+h1 {
+    font-size: 44px;
+    line-height: 54px;
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 45px;
+}
+
+.nav .image-holder {
+    max-width: 185px;
+    padding: 22px 0 24px;
+    float: left;
+}
+.sign-buttons {
+    float: right;
+    padding: 15px 0 17px;
+    line-height: 24px
+}
+
+.nav-link-and-sign {
+    float: right;
+}
+
+.nav-links {
+    list-style: none;
+    float: left;
+    padding: 24px 30px 26px;
+    font-size: 14px;
+    line-height: 28px;
+    color: #2F281E;
+}
+
+.nav-link-item {
+    display: inline-block;
+    padding: 0 17px;
+}
+
+.sign-in {
+    color: #173A56;
+    width: 100px;
+    height: 46px;
+    background-color: #ffffff;
+    border: 1px solid #BCD0E5;
+    border-radius: 4px;
+    margin-right: 14px;
+}
+
+.sign-up {
+    color: #ffffff;
+    width: 100px;
+    height: 46px;
+    background-color: #FF9900;
+    border: 1px solid #FF9900;
+    border-radius: 4px;
+}
+
+.hero-section .hero-text {
+    padding: 80px 0;
+    max-width: 450px;
+    float: left;
+    overflow: hidden;
+}
+
+.hero-section .image-holder {
+    max-width: 600px;
+    float: right;
+}
+
+.get-started {
+    color: #ffffff;
+    width: 175px;
+    height: 53px;
+    background-color: #FF9900;
+    border: 1px solid #FF9900;
+    border-radius: 4px;
+    margin-right: 30px;
+}
+
+.watch-video {
+    color: #FF9900;
+    text-decoration: underline;
+    width: 161px;
+    height: 23px;
+    background-color: #ffffff;
+    border: none;
+}
+
+.watch-video::before {
+   content: url(../image/play-icon.png);
+   width: 23px;
+   display: inline-block;
+   vertical-align: middle;
+   padding: 0 8px;
+}
+
