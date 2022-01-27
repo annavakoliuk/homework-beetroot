@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1852px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 48px;
+    margin-bottom: 48px;
+    display: inline-flex;
+    text-transform: uppercase;
+}
+
+.text-holder{
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+p {
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 48px;
+    margin-bottom: 48px;
+}
+
+
+a {
+    color: #000000;
+}
+
+code {
+    background-color: #ededed;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;;
+    font-size: 36px;
+    line-height: 48px;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+header {
+    padding: 12px 0 82px;
+}
+
+.header .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lang {
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    -webkit-text-stroke: 1px black;
+}
+
+.logo-holder {
+    max-width: 243px;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 353px;
+    width: 100%;;
+    justify-content: space-between;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-list-item {
+    margin-right: 16px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #000000;
+}
+
+.article-list {
+    list-style: none;
+    counter-reset: orderedlist;
+}
+
+ .article-list-item h1::before, .article-list-item h2::before {
+    counter-increment: orderedlist;
+    content: counter(orderedlist);
+    font-size: .5em;
+    line-height: 37px;
+    margin-right: 9px;
+  } 
+
+
+.article-list {
+    list-style-position: inside;
+}
+
+.article-list-item {
+    margin-bottom: 96px;
+
+}
+
+.second-level-list {
+    list-style: none;
+    
+}
+
+.second-level-p {
+    display: list-item;
+    list-style-position: inside;
+    padding-left: 9px;
+}
+
+.second-level-p::before {
+    content: '+';
+    margin-right: 9px;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
