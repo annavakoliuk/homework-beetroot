@@ -22,15 +22,26 @@ p {
     font-weight: 400;
 }
 
+main {
+    padding-top: 128px;
+}
+
 .header {
     padding-top: 20px;
     margin-bottom: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
+
+
 
 .container {
     width: 100%;
     max-width: 1125px;
     margin: 0 auto;
+    
 }
 
 .button {
