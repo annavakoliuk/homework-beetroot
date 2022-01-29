@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="src/styles/fonts.css">
+    <title>Introduction</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="lang">
+                    <span>ENG</span>
+                </div>
+                <ul class="nav-list">
+                    <li class="nav-list-item">
+                        <span><a href="#" class="nav-link">Documentation</a> /</span>
+                    </li>
+                    <li class="nav-list-item">
+                        <span><a href="#" class="nav-link">Who's using</a></span>
+                    </li>
+                </ul>
+            </nav>
+            <div class="logo-holder">
+                <img src="src/images/logo.png" alt="logo">
+            </div>
+        </div>
+    </header>
+    <main>
+        <aside class="sidebar">
+            <ul class="sidebar-list">
+                <li class="sidebar-item">
+                    <h2 class="sidebar-headers">Introduction</h2>
+                </li>
+                <li class="sidebar-item">
+                    <h2 class="sidebar-headers">Core Components</h2>
+                </li>
+                <li class="sidebar-item">
+                    <h2 class="sidebar-headers">React Fundamentals</h2>
+                </li>
+                <li class="sidebar-item">
+                    <h2 class="sidebar-headers">Handling Text Input</h2>
+                </li>
+            </ul>
+            <div class="backgroung-image">
+                <img src="src/images/background.jpg" alt="backgroung-image">
+            </div>
+        </aside>
+        <div class="article">
+            <div class="container">
+                <ul class="article-list">
+                    <li class="article-list-item">
+                        <div class="black-line"></div>
+                        <h1>Introduction</h1>
+                        <p>Welcome to the very start of your React Native journey! If you're looking for environment setup instructions, they've moved to <a href="#">their own section</a>. Continue reading for an introduction to the documentation, Native Components, React, and more!</p>
+                    </li>
+                    <li class="article-list-item">
+                        <div class="black-line"></div>
+                        <h2>Components</h2>
+                        <p>React Native is an open source framework for building Android and iOS applications using React and the app platform’s native capabiles. With React Native, you use JavaScript to access your platform’s APIs as well as to describe the appearance and behavior of your UI using React components: bundles of reusable, nestable code. You can learn more about React in the next section. But first, let’s cover how components work in React Native.</p>
+                    </li>
+                    <li class="article-list-item">
+                        <div class="black-line"></div>
+                        <h2>React Fundamentals</h2>
+                        <p>React Native runs on <a href="#">React</a>, a popular open source library for building user interfaces with JavaScript. To make the most of React Native, it helps to understand React itself. This section can get you started or can serve as a refresher course.
+                        </p>
+                        <p>We’re going to cover the core concepts behind React:</p>
+                        <ul class="second-level-list">
+                            <li>
+                                <p class="second-level-p"><strong>components.</strong> The rest of this introduction to React uses cats in its examples: friendly, approachable creatures that need names and a cafe to work in.</p>
+                            </li>
+                            <li>
+                                <p class="second-level-p"><strong>JSX.</strong> React and React Native use JSX, a syntax that lets you write elements inside JavaScript like so: <code>&lt;Text&gt;Hello, I am your cat!	&lt;/Text&gt;</code>. The React docs have a <a href="#">comprehensive guide to JSX</a> you can refer to learn even more. Because JSX is JavaScript, you can use variables inside it. Here you are declaring a name for the cat, name, and embedding it with curly braces inside <code>&lt;Text&gt;</code>.</p>
+                            </li>
+                            <li>
+                                <p class="second-level-p"><strong>props.</strong> Props is short for “properties”. </p>
+                            </li>
+                            <li>
+                                <p class="second-level-p"><strong>state.</strong>While you can think of props as arguments you use to configure how components render, state is like a component’s personal data storage. State is useful for handling data that changes over time or that comes from user interaction. State gives your components memory!</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="article-list-item">
+                        <div class="black-line"></div>
+                        <h2>Handling Text Input</h2>
+                        <p>TextInput is a Core Component that allows the user to enter text. It has an onChangeText prop that takes a function to be called every time the text changed, and an onSubmitEditing prop that takes a function to be called when the text is submitted.
+                        </p>
+                        <p>For example, let's say that as the user types, you're translating their words into a different language. In this new language, every single word is written the same way: 🍕. So the sentence "Hello there Bob" would be translated as "🍕 🍕".
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
