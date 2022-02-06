@@ -447,6 +447,7 @@ main .benefits:last-child {
 .footer__col {
   list-style: none;
   line-height: 35px;
+  margin-bottom: 0;
   margin-right: 10px;
 }
 .footer__form .text-field {

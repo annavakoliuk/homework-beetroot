@@ -20,7 +20,6 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-    
     }
 
     &__form {
@@ -29,9 +28,11 @@
         flex-direction: column;
         align-self: flex-end;
     }
+
     &__col {
         list-style: none;
         line-height: 35px;
+        margin-bottom: 0;
         margin-right: 10px;
     }
 
