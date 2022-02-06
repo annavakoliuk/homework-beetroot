@@ -1,10 +1,32 @@
+
+// Colors
+
 $white: #fff;
 $black: #2F281E;
 $light-black: #544837;
 $orange: #FF9900;
+$blue: #173A56;
+$light-blue: #BCD0E5;
+$divider-color: rgba(188, 208, 229, 0.4969);
+
+// Typography
 
 $font-size-global: 16px;
+$font-weight-global: 500;
 $line-height: 26px;
 $font: 'Poppins', sans-serif;
 
-$btn-border-radius: 4px;
+$font-size-h1: 44px;
+$line-height-h1: 1.23*$font-size-h1;
+$font-size-h2:36px;
+$line-height-h2: 1.5*$font-size-h2;
+$font-size-h3: 22px;
+$line-height-h3: 1.5*$font-size-h3;
+$font-size-h4: 16px;
+$line-height-h4: 1.63*$font-size-h4;
+
+//Buttons and forms
+
+$border-radius: 4px;
+
+

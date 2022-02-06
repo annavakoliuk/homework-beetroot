@@ -1,0 +1,90 @@
+main .benefits:last-child {
+    margin-bottom: 150px;
+}
+
+.benefits {
+    margin-bottom: 100px;
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__image-holder {
+        max-width: 50%;
+    }
+
+    &__content {
+        max-width: 50%;
+    }
+
+    &__content--right {
+        padding-left: 100px;
+    }
+
+    &__content--left {
+        padding-right: 100px;
+    }
+
+    &__pseudo-title {
+        margin-bottom: 3px;
+    }
+
+    &__title {
+        margin-bottom: 22px;
+    }
+
+    &__description {
+        margin-bottom: 30px;
+    }
+
+    &__text .heading--h-4 {
+    margin-bottom: 12px;
+    }
+
+    &__text p {
+        margin-bottom: 25px;
+    }
+
+    &__text p:last-child {
+        margin-bottom: 0;
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        margin-bottom: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-left: 65px;
+        position: relative;
+    }
+
+    &__item:last-child {
+        margin-bottom: 0;
+    }
+
+    &__item::before {
+        content: "";
+        width: 35px;
+        height: 35px;
+        border-radius: 14px;
+        background-color:$orange;
+        position: absolute;
+        left: 0px;
+    }
+
+    &__item::after {
+        content: url(../image/tick.png);
+        align-items: center;
+        position: absolute;
+        left: 10px;
+    }
+
+}
+
