@@ -1,0 +1,82 @@
+.follow-section {
+
+    .container {
+        padding-top: 21px;
+        padding-bottom: 21px;
+        display: flex;
+        flex-wrap: wrap;
+        border-top: 1px solid $gray-1;
+
+    }
+
+    .cards-holder {
+        width: calc(70%/2);
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+
+        @include breakpoint('lg') {
+            width: 100%;
+        }
+    }
+
+    .insta-icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        transform: translateY(-50%);
+    }
+
+    .follow-card {
+        width: 50%;
+        position: relative;
+    }
+
+    .image-holder {
+        padding-right: 1px;
+        border-right: 1px solid $gray-4;
+    }
+
+    .icon-and-btn-holder {
+        width: 30%;
+        position: relative;
+        text-align: center;
+       
+
+        @include breakpoint('lg') {
+            width: 100%;
+            padding: 60px 10px;
+        }
+
+        .insta-icon-big {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            fill: $gray-4;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .title-holder {
+            padding: 40px 5px 0;
+            margin-bottom: 40px;
+            z-index: 2;
+            position: relative;
+        }
+
+        .title {
+            font-size: 40px;
+            line-height: 50px;
+            color: $yellow;
+        }
+
+        .btn-holder {
+            position: relative;
+            z-index: 2;
+        }
+    }
+
+}

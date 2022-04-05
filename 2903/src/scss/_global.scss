@@ -1,0 +1,143 @@
+
+// Layout
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+html, body, div, span, 
+h1, h2, h3, h4, h5, h6, p, 
+a, img, strong, ol, ul, li {
+
+	margin: 0;
+	padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+strong {
+    font-weight: inherit;
+}
+
+body {
+    font-size: $font-size-global;
+    font-family: $font-global;
+    line-height: $line-height-global;
+    font-weight: $font-weight-global;
+    color: $brown;
+    background-color: $black-1;
+    }
+
+
+.main {
+    padding-top: 59px;
+}
+
+
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    background-image: url('');
+}
+
+.link {
+    transition: all .4s ease;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+
+
+//Headings
+
+.heading {
+    font-weight: 400;
+}
+
+
+.h1 {   
+    color: $white;                   
+    font-size: 70px;
+    line-height: 80px;
+    letter-spacing: 1px;
+
+    @include breakpoint('sm') {
+        font-size: 50px;
+        line-height: 55px;
+    }
+}
+
+
+.h2 {                      
+    color: $yellow;
+    font-size: 60px;
+    line-height: 70px;
+
+    @include breakpoint('sm') {
+        font-size: 40px;
+        line-height: 45px;
+    }
+}
+
+
+.subtitle {
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 2px;
+    color: $brown;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+
+.btn {
+    padding: 15px 25px;
+    border: 1px solid $yellow;
+    background-color: $yellow;
+    color: $black-1;
+    text-transform: uppercase;
+    line-height: 22px;
+    transition: all .4s ease;
+    cursor: pointer;
+    display: inline-block;
+    
+
+    &:hover {
+        color: $yellow;
+        background-color: $black-1;
+        border: 1px solid $yellow;
+        
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
