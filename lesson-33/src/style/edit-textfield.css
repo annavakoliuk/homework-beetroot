@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.workplace {
+    margin: 0 auto;
+    max-width: 500px;
+    position: relative;
+}
+
+.text-area {
+    width: 100%;
+    border: 2px solid rgb(168, 168, 168);
+    padding: 20px;
+    position: absolute;
+    top: 200px;
+    left: 0;
+}
+
+.input {
+    top: 200px;
+    line-height: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    overflow: hidden;
+    border: 2px solid rgb(150, 150, 243);
+}
+
+.input:focus {
+    outline: 2px solid rgb(150, 150, 243);
+}
