@@ -1,0 +1,244 @@
+*{
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+body {
+    background-color: rgb(43, 104, 43);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.btn {
+    border: 2px solid  rgb(172, 171, 171);
+    background-color: white;
+    color: black;
+    padding: 10px 15px;
+    font-family: inherit;
+    font-weight: 500;
+    transition: all ease-out 0.3s;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.btn:hover {
+    background-color: rgb(187, 186, 186);
+}
+
+.back-img {
+    border-radius: 8px;
+}
+
+.cards-holder {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.card {
+    width: 187px;
+    height: 262px;
+    padding: 10px;
+    perspective: 1000px;
+}
+
+.card.red {
+    color: red;
+}
+
+
+.inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.front {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.back {
+    width: 100%;
+}
+
+
+.front, .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transition: transform 0.8s ease-out;
+   
+}
+
+.front {
+    transform: rotateY(-180deg);
+}
+
+.card:hover .back {
+    transform: rotateY(180deg);
+}
+
+.card:hover .front {
+    transform: rotateY(0);
+} 
+
+
+.value {
+    font-size: 20px;
+}
+.value-and-suit {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-self: baseline;
+}
+
+.front {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.reversed {
+    transform: rotate(180deg);
+}
+
+.value-and-suit.reversed {
+    align-self: flex-end;
+}
+
+.suit-icons {
+    align-self: center;
+}
+
+.icon-rows {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row-icon { 
+    display: inline-block;
+    font-size: 35px;
+    text-align: center;
+}
+
+.outer-icon {
+    width: 50%;
+    padding: 20px 0 20px;
+}
+
+.icon-inner-row {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.icon-inner-row.seven {
+    top: 24%;
+}
+
+.icon-inner-row.two-items {
+    top: 24%;
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+}
+
+.nine-ten .outer-icon  {
+   padding: 7px 0 7px;
+}
+
+.icon-inner-row.ten {
+    gap: 60px;
+}
+
+.icon-inner-row.nine {
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.suit-icons.person {
+    width: 100%;
+    height: 79%;
+    padding: 0 5px;
+    position: relative;
+}
+.person-card {
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    border-radius: 8px;
+    
+}
+
+.person-icon {
+    position: absolute;
+    font-size: 30px;
+}
+
+.person-icon.top {
+    top: 3%;
+    left: 7%;
+}
+
+.person-icon.bottom {
+    bottom: 3%;
+    right: 7%;
+}
+
+.ace-icon {
+    font-size: 50px;
+}
+
+.flip-front {
+    animation-name: flip-front;
+    animation-duration: 3s;
+}
+
+.flip-back {
+    animation-name: flip-back;
+    animation-duration: 3s;
+}
+
+
+@keyframes flip-front {
+    0% {
+        transform: rotateY(-180deg);
+    }
+
+    50% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(-180deg);
+    }
+}
+
+@keyframes flip-back {
+    0% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(180deg);
+    }
+    100% {
+        transform: rotateY(0deg);
+    }
+}
+
+
