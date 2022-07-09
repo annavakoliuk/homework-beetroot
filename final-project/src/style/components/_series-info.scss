@@ -1,0 +1,79 @@
+.info-window {
+  overflow: scroll;
+  max-height: 80vh;
+  max-width: 900px;
+  width: 80%;
+  opacity: 0;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: $black-1;
+
+  border-radius: 4px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.25);
+
+  // transition: ease-out all 0.1s;
+  pointer-events: none;
+
+  @include breakpoint-mf("sm") {
+    width: 80%;
+    display: flex;
+    align-items: flex-start;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+  }
+
+  .image-holder {
+    width: 80%;
+    padding-top: 10px;
+
+    @include breakpoint-mf("sm") {
+      width: 40%;
+      padding-right: 20px;
+    }
+  }
+
+  .info-list {
+    width: 60%;
+    padding: 20px 0;
+  }
+
+  .info-item {
+    margin-bottom: 10px;
+  }
+
+  .info-bold {
+    font-weight: $font-semibold;
+  }
+
+  .close {
+    background-color: transparent;
+    border: transparent;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .close::after {
+    content: "\00d7";
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    line-height: 8px;
+    cursor: pointer;
+
+    @include breakpoint-mf("sm") {
+      font-size: 30px;
+      line-height: 15px;
+    }
+  }
+}
+
+.active {
+  pointer-events: auto;
+  opacity: 1;
+}

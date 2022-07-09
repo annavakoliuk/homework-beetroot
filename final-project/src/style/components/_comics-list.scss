@@ -1,0 +1,61 @@
+.container.comics-list-container {
+  padding-left: 0;
+  padding-right: 0;
+
+  .btn {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+}
+
+.comics-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: ease-out all 0.3s;
+  padding-bottom: 30px;
+
+  @include breakpoint-mf("lg") {
+    justify-content: space-between;
+    padding-bottom: 50px;
+  }
+
+  .comics-link {
+    display: inline-block;
+    width: 100%;
+    transition: ease-out all 0.3s;
+    &:hover {
+      background-color: $black-2;
+      transform: scale(1.2);
+      border-radius: 4px;
+    }
+  }
+
+  .comics-item {
+    width: 100%;
+    max-width: 241px;
+    text-align: center;
+    padding: 10px;
+
+    @include breakpoint-mf("md") {
+      padding: 20px;
+    }
+  }
+
+  .comics-title {
+    display: inline-block;
+    padding: 10px;
+  }
+}
+
+.list-results-text {
+  display: block;
+  text-align: center;
+  padding-bottom: 40px;
+  font-size: 18px;
+
+  @include breakpoint-mf("md") {
+    font-size: 20px;
+  }
+}

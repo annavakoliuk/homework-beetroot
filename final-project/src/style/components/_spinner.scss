@@ -1,0 +1,30 @@
+.loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: block;
+  margin: 15px auto;
+  background: $white;
+  box-shadow: -24px 0 $white, 24px 0 $white;
+  box-sizing: border-box;
+  animation: shadowPulse 2s linear infinite;
+}
+
+@keyframes shadowPulse {
+  33% {
+    background: $white;
+    box-shadow: -24px 0 $red, 24px 0 $white;
+  }
+  66% {
+    background: $red;
+    box-shadow: -24px 0 $white, 24px 0 $white;
+  }
+  100% {
+    background: $white;
+    box-shadow: -24px 0 $white, 24px 0 $red;
+  }
+}

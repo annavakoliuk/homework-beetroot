@@ -1,0 +1,17 @@
+.logo-holder {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 130px;
+  transition: all ease-out 0.3s;
+  padding: 10px 0;
+
+  @include breakpoint-mf("md") {
+    max-width: 180px;
+    adding: 25px 0;
+  }
+
+  .logo-link {
+    display: inline-block;
+    width: 100%;
+  }
+}

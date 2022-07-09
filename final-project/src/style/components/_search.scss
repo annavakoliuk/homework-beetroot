@@ -1,0 +1,91 @@
+.browse-section-header {
+  .container {
+    padding: 50px 0 35px 0;
+
+    @include breakpoint-mf("md") {
+      padding: 130px 20px 90px 20px;
+    }
+  }
+
+  .title-holder {
+    margin-bottom: 15px;
+    padding: 0 10px;
+    text-align: center;
+
+    @include breakpoint-mf("md") {
+      margin-bottom: 50px;
+    }
+  }
+
+  .search-sort-bar {
+    background-color: $black-2;
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all ease-out 0.3s;
+
+    @include breakpoint-mf("md") {
+      padding: 30px 35px;
+    }
+
+    @include breakpoint-mf("lg") {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  .search-bar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+
+    @include breakpoint-mf("md") {
+      margin-bottom: 55px;
+    }
+
+    @include breakpoint-mf("lg") {
+      margin-bottom: 0;
+      justify-content: flex-start;
+    }
+  }
+
+  .search-input-holder {
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+  }
+
+  .search-input {
+    width: 100%;
+    padding-right: 40px;
+  }
+
+  .search-input-icon {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 15px;
+  }
+
+  .sort-input-holder {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include breakpoint-mf("lg") {
+      justify-content: flex-end;
+    }
+  }
+
+  .sort-input {
+    width: 80%;
+    max-width: 220px;
+  }
+
+  .sort-label {
+    padding-right: 10px;
+  }
+}

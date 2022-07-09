@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &:focus-visible {
+    border: 1px solid $white;
+  }
+}
+
+button {
+  &:focus-visible {
+    border: 1px solid $white;
+  }
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+body {
+  color: $white;
+  background-color: $black-1;
+  font-family: $font-family-global;
+  font-size: $font-size-global-m;
+
+  @include breakpoint-mf("md") {
+    font-size: $font-size-global;
+  }
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1064px;
+
+  @include breakpoint-mf("md") {
+    padding: 0 20px;
+  }
+}
+
+//buttons and input
+
+.btn {
+  display: inline-block;
+  background-color: $red;
+  border: none;
+  font-family: $font-family-global;
+  font-weight: $font-semibold;
+  font-size: 16px;
+  padding: 10px;
+  transition: ease-out all 0.3s;
+  color: $white;
+  border-radius: 4px;
+  cursor: pointer;
+  outline-color: white;
+
+  &:hover,
+  &:focus-visible {
+    background-color: $dark-red;
+  }
+
+  &:active {
+    background-color: rgb(82, 17, 17);
+  }
+
+  @include breakpoint-mf("md") {
+    font-size: 24px;
+    padding: 20px;
+  }
+}
+
+.input {
+  background-color: $black-1;
+  border-radius: 4px;
+  padding: 15px;
+  font-size: 14px;
+  color: $white;
+  font-family: inherit;
+  border: 1px solid rgb(63, 63, 63);
+  outline: none;
+
+  &:focus {
+    border: 1px solid $white;
+  }
+
+  @include breakpoint-mf("md") {
+    font-size: 16px;
+  }
+}
+
+//Typography
+
+.h1 {
+  font-size: $font-size-h1-m;
+
+  @include breakpoint-mf("md") {
+    font-size: $font-size-h1;
+  }
+}
+
+.h2 {
+  font-size: $font-size-h2-m;
+
+  @include breakpoint-mf("md") {
+    font-size: $font-size-h2;
+  }
+}
+
+.subtitle {
+  font-size: $font-size-subtitle-m;
+
+  @include breakpoint-mf("md") {
+    font-size: $font-size-subtitle;
+  }
+
+  font-weight: 600;
+}
